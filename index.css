@@ -160,7 +160,7 @@ header h1 {
 
 .hero-heading-sub2 h2 {
 	color: #79b0d7;
-	font-size: 30px;
+	font-size: 25px;
 	font-family: Ananda_Black_Personal_Use;
 }
 
@@ -169,6 +169,82 @@ header h1 {
 	background-color: #5d798f;
 	border-radius: 50px;
 }
+
+/* form section start */
+
+.df {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form {
+	background: #79b0d7;
+	color: #000;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	padding: 20px;
+}
+
+.form h2 {
+	color: #d91616;
+	margin-bottom: 15px;
+
+	font-family: Comic-Sans-MS;
+}
+
+form {
+	width: 500px;
+
+	gap: 10px;
+
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
+
+	font-family: Comic-Sans-MS;
+	font-size: 15px;
+}
+
+input,
+textarea {
+	padding: 5px;
+	border: 0px;
+	border-radius: 5px;
+}
+
+.form-btn {
+	width: 30%;
+	padding: 10px;
+
+	border: 0px;
+	border-radius: 20px;
+
+	color: #fff;
+	background-color: #3f6b9a;
+}
+
+.f-btn-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-demo-img {
+	width: 100px;
+	height: 100px;
+
+	border-radius: 10px;
+
+	object-fit: cover;
+}
+
+/* form section end */
 
 footer {
 	padding: 10px;
