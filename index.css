@@ -60,13 +60,13 @@ header {
 
 	font-family: Photograph_Signature;
 
-	background: rgb(246, 244, 243);
-	background: linear-gradient(
+	background: rgb(58 154 201);
+	/* background: linear-gradient(
 		90deg,
 		rgba(246, 244, 243, 1) 0%,
 		rgba(27, 165, 205, 1) 50%,
 		rgba(246, 248, 249, 1) 100%
-	);
+	); */
 }
 
 header img {
@@ -77,7 +77,8 @@ header img {
 }
 
 header h1 {
-	color: #000;
+	/* color: #000; */
+	color: #fff;
 	font-size: 20px;
 	margin-left: 10px;
 
@@ -155,7 +156,7 @@ header h1 {
 	justify-content: center;
 	background-color: #3f6b9a;
 
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 .hero-heading-sub2 h2 {
@@ -179,8 +180,16 @@ header h1 {
 }
 
 .form {
-	background: #79b0d7;
+	/* background: #79b0d7; */
 	color: #000;
+
+	background: rgb(154, 195, 215);
+	background: linear-gradient(
+		90deg,
+		rgba(154, 195, 215, 1) 0%,
+		rgba(33, 94, 196, 1) 50%,
+		rgba(168, 207, 227, 1) 100%
+	);
 
 	display: flex;
 	flex-direction: column;
@@ -209,6 +218,17 @@ form {
 
 	font-family: Comic-Sans-MS;
 	font-size: 15px;
+}
+
+.form-paper {
+	width: 550px;
+	border-radius: 10px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #dbe1e9;
 }
 
 input,
