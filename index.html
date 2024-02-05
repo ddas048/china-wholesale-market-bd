@@ -4,239 +4,279 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-		<link rel="stylesheet" href="index.css" />
+		<!-- <link rel="stylesheet" href="index.css" /> -->
 		<title>China Wolesale Market BD</title>
 	</head>
 
-	<body>
-		<div class="container">
-			<header>
-				<img src="/images/nLogo.jpeg" alt="Logo" />
-				<h1>China Wholesale Market BD</h1>
-			</header>
+	<body class="w-full h-full font-serif">
+		<!-- header section start -->
+		<header
+			class="h-12 p-7 flex items-center sm:justify-normal justify-center bg-[#3a9ac9]"
+		>
+			<img
+				src="./images/nLogo.jpeg"
+				alt="Logo"
+				class="h-10 w-10 ml-5 rounded-full"
+			/>
+			<h1 class="ml-2 text-white">China Wholesale Market BD</h1>
+		</header>
+		<!-- header section end -->
 
-			<div class="hero">
-				<div class="hero-overlay">
-					<div class="hero-content">
-						<div class="hero-heading">
-							<h1>China</h1>
-							<img src="/images/nLogo.jpeg" alt="Logo" />
-							<h1>Market</h1>
-						</div>
-					</div>
-					<div class="hero-heading-sub1">
-						<h2 class="hero-heading-sub1-h2">
-							We have the best ways <br />
-							to bring products from china.
-						</h2>
-						<h2 class="est">Since - 2019</h2>
-					</div>
-					<div class="hero-heading-sub2">
-						<h2>
-							We help you To bring Products from different Palces of China
-						</h2>
-					</div>
-				</div>
-			</div>
-			<!-- <hr /> -->
-
-			<!-- form Section start -->
-
-			<div class="form">
-				<div class="form-paper">
-					<h2>Selling code form</h2>
-					<form
-						action="https://formsubmit.co/82734440a0bba95dcdb30e7ef6b6d770"
-						method="POST"
-						enctype="multipart/form-data"
-					>
-						<input
-							type="hidden"
-							name="_next"
-							value="https://chinawholesalemarketbd.com/"
+		<!-- hero section start -->
+		<div
+			class="sm:h-[500px] h-[300px] text-white bg-[url('./images/hero.jpeg')] bg-no-repeat bg-center bg-cover flex items-center"
+		>
+			<div class="w-full h-full bg-black/30 flex flex-col justify-center">
+				<div class="m-6">
+					<div class="flex justify-center items-center">
+						<h1 class="sm:text-8xl text-4xl">China</h1>
+						<img
+							src="./images/nLogo.jpeg"
+							alt="Logo"
+							class="sm:h-40 h-14 sm:w-40 w-14 md:mx-0 mx-1 rounded-full"
 						/>
-						<input type="hidden" name="_subject" value="Message From CWM.com" />
-						<input type="hidden" name="_template" value="table" />
-
-						<div class="df name">
-							<label for="name">
-								<span style="color: #d91616">*</span> Full Name / পুরো
-								নাম</label
-							>
-							<input type="text" name="name" required />
-						</div>
-
-						<div class="df nid-no">
-							<label for="nid-or-birth-certificater-no">
-								<span style="color: #d91616">*</span> NID or Birth Certificater
-								Number / জাতীয় পরিচয়পত্র বা জন্ম নিবন্ধন নম্বর
-							</label>
-							<input type="text" name="nid-or-birth-certificater-no" required />
-						</div>
-
-						<div class="df nid-front">
-							<label for="nid-front">
-								<span style="color: #d91616">*</span> NID card picture front
-								side / জাতীয় পরিচয়পত্রের সামনের ছবি</label
-							>
-							<img
-								class="form-demo-img"
-								id="nid-front"
-								src="images/upload-icon.jpg"
-							/>
-							<input
-								type="file"
-								name="nid-front"
-								accept="image/png, image/jpeg, image/jpg"
-								onchange="loadFile(event, 'nid-front')"
-							/>
-						</div>
-
-						<div class="df nid-back">
-							<label for="nid-back">
-								<span style="color: #d91616">*</span> NID card picture back side
-								/ জাতীয় পরিচয়পত্রের পিছনের ছবি</label
-							>
-							<img
-								class="form-demo-img"
-								id="nid-back"
-								src="images/upload-icon.jpg"
-							/>
-							<input
-								type="file"
-								name="nid-back"
-								accept="image/png, image/jpeg, image/jpg"
-								onchange="loadFile(event, 'nid-back')"
-							/>
-						</div>
-
-						<p style="display: block; text-align: center; margin: auto">OR</p>
-
-						<div class="df b-cert">
-							<label for="birth-certificate">
-								<span style="color: #d91616">*</span> Birth Certificate / জন্ম
-								নিবন্ধনের</label
-							>
-							<img
-								class="form-demo-img"
-								id="birth-certificate"
-								src="images/upload-icon.jpg"
-							/>
-							<input
-								type="file"
-								name="birth-certificate"
-								accept="image/png, image/jpeg, image/jpg"
-								onchange="loadFile(event, 'birth-certificate')"
-							/>
-						</div>
-
-						<div class="df phn">
-							<label for="phone">
-								<span style="color: #d91616">*</span> Phone No. / ফোন
-								নম্বর</label
-							>
-							<input type="tel" name="phone" required />
-						</div>
-
-						<div class="df type">
-							<label for="type">
-								<span style="color: #d91616">*</span> Who are you?</label
-							>
-							<div class="fo1">
-								<input type="radio" id="html" name="type" value="Buyer" />
-								<label for="buyer">Buyer</label>
-							</div>
-
-							<div class="fo2">
-								<input type="radio" id="css" name="type" value="Seller" />
-								<label for="seller">Seller</label>
-							</div>
-						</div>
-
-						<div class="df desc">
-							<label for="description">
-								<span style="color: #d91616">*</span> Explain reason why you
-								need selling code.</label
-							>
-							<textarea
-								name="description"
-								cols="30"
-								rows="10"
-								required
-							></textarea>
-						</div>
-
-						<div class="note">
-							<p>
-								*<span style="color: #911313">
-									Note: file size must not exceed 5MB and the file type must be
-									jpg, jpeg or png</span
-								>
-							</p>
-						</div>
-
-						<div class="f-btn-cont">
-							<button class="form-btn" type="submit">Submit</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<!-- form Section end -->
-
-			<footer>
-				<div class="left">
-					<p>
-						<span>Follow us on: </span>
-						<a
-							class="btn"
-							href="https://www.facebook.com/people/China-Wholesale-MarketBD/61550950750423/"
-							target="_blank"
-							>Page</a
-						>
-						<span style="font-size: 25px">|</span>
-						<a
-							class="btn"
-							href="https://www.facebook.com/groups/909958592772122/?ref=share&mibextid=NSMWBT"
-							target="_blank"
-							>Group
-						</a>
-					</p>
-
-					<p>
-						<span>Location:</span>
-						<span style="font-family: Comic-Sans-MS"
-							>58/Bonogram lohar market, Bonogram, Dhaka-1203</span
-						>
-					</p>
-				</div>
-
-				<div class="right">
-					<div class="ft_ct_main">
-						<div class="ft_ct_icon">
-							<span>Contact: </span>
-						</div>
-						<div class="ft_ct_con">
-							<p>
-								<a href="tel:01919635035">01919635035</a>
-							</p>
-							<p>
-								<a href="tel:01979635037">01979635037</a>
-							</p>
-						</div>
+						<h1 class="sm:text-8xl text-4xl">Market</h1>
 					</div>
 				</div>
-			</footer>
-		</div>
 
-		<script>
-			var loadFile = function (event, id) {
-				var output = document.getElementById(id);
-				output.src = URL.createObjectURL(event.target.files[0]);
-				output.onload = function () {
-					URL.revokeObjectURL(output.src); // free memory
-				};
-			};
-		</script>
+				<div
+					class="flex justify-end sm:flex-row flex-col items-center sm:mt-12"
+				>
+					<h2 class="sm:text-3xl text-lg sm:text-right text-center">
+						We have the best ways <br />
+						to bring products from china.
+					</h2>
+					<h2
+						class="sm:mr-20 mr-8 sm:ml-20 ml-8 sm:text-xl text-lg font-normal sm:text-[#7b84a5] text-amber-300"
+					>
+						Since - 2019
+					</h2>
+				</div>
+				<div class="flex justify-center items-center bg-[#3f6b9a] mt-2">
+					<h2 class="sm:text-2xl text-sm text-[#79b0d7] p-2">
+						We help you To bring Products from different Palces of China
+					</h2>
+				</div>
+			</div>
+		</div>
+		<!-- hero section end -->
+
+		<!-- form Section start -->
+		<div
+			class="flex flex-col items-center justify-center p-5 bg-gradient-to-r from-cyan-300 via-blue-600 to-cyan-300"
+		>
+			<div
+				class="sm:w-[550px] w-[400px] p-7 rounded-lg flex flex-col items-center justify-center bg-slate-200"
+			>
+				<h2 class="text-[#d91616] mb-4 sm:text-3xl text-2xl">
+					Selling code form
+				</h2>
+				<form
+					action="https://formsubmit.co/82734440a0bba95dcdb30e7ef6b6d770"
+					method="POST"
+					enctype="multipart/form-data"
+					class="sm:w-[500px] w-[350px] gap-3 flex flex-col justify-center sm:text-base text-sm"
+				>
+					<input
+						type="hidden"
+						name="_next"
+						value="https://chinawholesalemarketbd.com/"
+					/>
+					<input type="hidden" name="_subject" value="Message From CWM.com" />
+					<input type="hidden" name="_template" value="table" />
+
+					<div class="flex flex-col gap-2 name">
+						<label for="name">
+							<span style="color: #d91616">*</span> Full Name / পুরো নাম</label
+						>
+						<input class="p-1 rounded-md" type="text" name="name" required />
+					</div>
+
+					<div class="flex flex-col gap-2 nid-no">
+						<label for="nid-or-birth-certificater-no">
+							<span style="color: #d91616">*</span> NID or Birth Certificater
+							Number / জাতীয় পরিচয়পত্র বা জন্ম নিবন্ধন নম্বর
+						</label>
+						<input
+							class="p-1 rounded-md"
+							type="text"
+							name="nid-or-birth-certificater-no"
+							required
+						/>
+					</div>
+
+					<div class="flex flex-col gap-2 nid-front">
+						<label for="nid-front">
+							<span style="color: #d91616">*</span> NID card picture front side
+							/ জাতীয় পরিচয়পত্রের সামনের ছবি</label
+						>
+						<img
+							class="w-[100px] h-[100px] rounded-lg"
+							id="nid-front"
+							src="./images/upload-icon.jpg"
+						/>
+						<input
+							type="file"
+							name="nid-front"
+							accept="image/png, image/jpeg, image/jpg"
+							onchange="loadFile(event, 'nid-front')"
+						/>
+					</div>
+
+					<div class="flex flex-col gap-2 nid-back">
+						<label for="nid-back">
+							<span style="color: #d91616">*</span> NID card picture back side /
+							জাতীয় পরিচয়পত্রের পিছনের ছবি</label
+						>
+						<img
+							class="w-[100px] h-[100px] rounded-lg"
+							id="nid-back"
+							src="./images/upload-icon.jpg"
+						/>
+						<input
+							type="file"
+							name="nid-back"
+							accept="image/png, image/jpeg, image/jpg"
+							onchange="loadFile(event, 'nid-back')"
+						/>
+					</div>
+
+					<p style="display: block; text-align: center; margin: auto">OR</p>
+
+					<div class="flex flex-col gap-2 b-cert">
+						<label for="birth-certificate">
+							<span style="color: #d91616">*</span> Birth Certificate / জন্ম
+							নিবন্ধনের</label
+						>
+						<img
+							class="w-[100px] h-[100px] rounded-lg"
+							id="birth-certificate"
+							src="./images/upload-icon.jpg"
+						/>
+						<input
+							type="file"
+							name="birth-certificate"
+							accept="image/png, image/jpeg, image/jpg"
+							onchange="loadFile(event, 'birth-certificate')"
+						/>
+					</div>
+
+					<div class="flex flex-col gap-2 phn">
+						<label for="phone">
+							<span style="color: #d91616">*</span> Phone No. / ফোন নম্বর</label
+						>
+						<input class="p-1 rounded-md" type="tel" name="phone" required />
+					</div>
+
+					<div class="flex flex-col gap-2 type">
+						<label for="type">
+							<span style="color: #d91616">*</span> Who are you?</label
+						>
+						<div class="fo1">
+							<input type="radio" id="html" name="type" value="Buyer" />
+							<label for="buyer">Buyer</label>
+						</div>
+
+						<div class="fo2">
+							<input type="radio" id="css" name="type" value="Seller" />
+							<label for="seller">Seller</label>
+						</div>
+					</div>
+
+					<div class="flex flex-col gap-2 desc">
+						<label for="description">
+							<span style="color: #d91616">*</span> Explain reason why you need
+							selling code.</label
+						>
+						<textarea
+							name="description"
+							cols="30"
+							rows="10"
+							required
+							class="p-1 rounded-md"
+						></textarea>
+					</div>
+
+					<div class="note">
+						<p>
+							*<span style="color: #911313">
+								Note: file size must not exceed 5MB and the file type must be
+								jpg, jpeg or png</span
+							>
+						</p>
+					</div>
+
+					<div class="flex items-center justify-center">
+						<button
+							class="w-[30%] px-3 py-2 rounded-3xl text-white bg-[#3f6b9a] hover:bg-[#548dc9] hover:text-black"
+							type="submit"
+						>
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- form Section end -->
+
+		<!-- footer Section start -->
+		<footer
+			class="flex sm:flex-row flex-col items-center justify-between p-7 bg-[#495468] text-white"
+		>
+			<div class="sm:w-[800px]">
+				<p class="p-4">
+					<span>Follow us on: </span>
+					<a
+						class="bg-[#5d798f] px-5 py-1 rounded-3xl hover:text-black hover:bg-[#3f6b9a]"
+						href="https://www.facebook.com/people/China-Wholesale-MarketBD/61550950750423/"
+						target="_blank"
+						>Page</a
+					>
+					<span style="font-size: 25px">|</span>
+					<a
+						class="bg-[#5d798f] px-5 py-1 rounded-3xl hover:text-black hover:bg-[#3f6b9a]"
+						href="https://www.facebook.com/groups/909958592772122/?ref=share&mibextid=NSMWBT"
+						target="_blank"
+						>Group
+					</a>
+				</p>
+
+				<p class="p-4">
+					<span>Location:</span>
+					<span style="font-family: Comic-Sans-MS"
+						>58/Bonogram lohar market, Bonogram, Dhaka-1203</span
+					>
+				</p>
+			</div>
+
+			<div class="w-96 h-full flex flex-col">
+				<div class="flex items-center justify-cente sm:p-0 p-4">
+					<div class="p-4">
+						<span>Contact: </span>
+					</div>
+					<div class="p-4">
+						<p class="p-3 hover:text-red-400">
+							<a href="tel:01919635035">01919635035</a>
+						</p>
+						<p class="p-3 hover:text-red-400">
+							<a href="tel:01979635037">01979635037</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- form Section end -->
 	</body>
+
+	<script>
+		var loadFile = function (event, id) {
+			var output = document.getElementById(id);
+			output.src = URL.createObjectURL(event.target.files[0]);
+			output.onload = function () {
+				URL.revokeObjectURL(output.src); // free memory
+			};
+		};
+	</script>
 </html>
