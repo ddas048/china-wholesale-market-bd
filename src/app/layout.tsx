@@ -25,7 +25,8 @@ export default function RootLayout({
 				baseTheme: dark
 			}}
 		>
-			<html lang="en">
+			{/* TODO: remove suppressHydrationWarning */}
+			<html lang="en" suppressHydrationWarning>
 				<body className={poppins.className}>
 					<ThemeProvider
 						attribute="class"
