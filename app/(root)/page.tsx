@@ -1,7 +1,9 @@
+import Navbar from "@/components/navbar";
+
 export default function Home() {
-	return (
-		<div>
-			<h1>China Wholesale Merket BD</h1>
-		</div>
-	);
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
