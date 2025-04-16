@@ -4,14 +4,17 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between border-b border-gray-300 px-6 py-3 text-gray-700 md:px-16 lg:px-32">
-      <Image
+      {/* <Image
         className="w-28 cursor-pointer md:w-32"
         // onClick={() => router.push("/")}
         src="/next.svg"
         width={500}
         height={500}
         alt="logo"
-      />
+      /> */}
+      <Link href="/" className="text-2xl font-bold">
+        <span className="text-orange-500">China</span> Wholesale Market
+      </Link>
       <div className="flex items-center gap-4 max-md:hidden lg:gap-8">
         <Link href="/" className="transition hover:text-gray-900">
           Home
@@ -45,7 +48,7 @@ export default function Navbar() {
           alt="search icon"
         />
         <button className="flex items-center gap-2 transition hover:text-gray-900">
-          <Image src="/next.svg" width={500} height={500} alt="user icon" />
+          <Image src="/next.svg" width={100} height={100} alt="user icon" />
           Account
         </button>
       </ul>
@@ -60,7 +63,7 @@ export default function Navbar() {
           </button>
         )} */}
         <button className="flex items-center gap-2 transition hover:text-gray-900">
-          <Image src="/next.svg" width={500} height={500} alt="user icon" />
+          <Image src="/next.svg" width={100} height={100} alt="user icon" />
           Account
         </button>
       </div>
