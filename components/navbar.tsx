@@ -41,9 +41,9 @@ export default function Navbar() {
       </div>
 
       <ul className="hidden items-center gap-4 md:flex">
-        <Search />
+        <Search className="size-4" />
         <button className="flex items-center gap-2 transition hover:text-gray-900">
-          <User />
+          <User className="size-5" />
           Account
         </button>
       </ul>
@@ -58,7 +58,7 @@ export default function Navbar() {
           </button>
         )} */}
         <button className="flex items-center gap-2 transition hover:text-gray-900">
-          <User />
+          <User className="size-5" />
           Account
         </button>
       </div>
