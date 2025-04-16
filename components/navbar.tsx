@@ -1,3 +1,4 @@
+import { Search, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,15 +41,9 @@ export default function Navbar() {
       </div>
 
       <ul className="hidden items-center gap-4 md:flex">
-        <Image
-          className="h-4 w-4"
-          src="/next.svg"
-          width={500}
-          height={500}
-          alt="search icon"
-        />
+        <Search />
         <button className="flex items-center gap-2 transition hover:text-gray-900">
-          <Image src="/next.svg" width={100} height={100} alt="user icon" />
+          <User />
           Account
         </button>
       </ul>
@@ -63,7 +58,7 @@ export default function Navbar() {
           </button>
         )} */}
         <button className="flex items-center gap-2 transition hover:text-gray-900">
-          <Image src="/next.svg" width={100} height={100} alt="user icon" />
+          <User />
           Account
         </button>
       </div>

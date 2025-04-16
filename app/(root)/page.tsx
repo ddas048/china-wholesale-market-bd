@@ -18,6 +18,7 @@ export default function Home() {
         <Banner />
         <NewsLetter />
       </div>
+
       <Footer />
     </>
   );
