@@ -1,17 +1,24 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer>
       <div className="flex flex-col items-start justify-center gap-10 border-b border-gray-500/30 px-6 py-14 text-gray-500 md:flex-row md:px-16 lg:px-32">
         <div className="w-4/5">
-          <Image
+          {/* <Image
             className="w-28 md:w-32"
             src="/next.svg"
             width={500}
             height={500}
             alt="logo"
-          />
+          /> */}
+
+          <Link href="/" className="text-2xl font-bold">
+            <span className="text-orange-500">China</span>{" "}
+            <span className="text-black">Wholesale Market</span>
+          </Link>
+
           <p className="mt-6 text-sm">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
