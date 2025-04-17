@@ -11,18 +11,20 @@ import {
 } from "@/components/ui/card";
 import { Heart, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
-export function ProductCard() {
+export function ProductCard({ product }: { product: any }) {
   return (
     <Card className="w-full max-w-[200px] cursor-pointer">
       <CardHeader className="group relative flex h-52 w-full cursor-pointer items-center justify-center rounded-lg bg-gray-500/10">
-        {/* <Image
-          src={product.image[0]}
+        <Image
+          src={product.imgSrc}
           alt={product.name}
           className="h-4/5 w-4/5 object-cover transition group-hover:scale-105 md:h-full md:w-full"
           width={800}
           height={800}
-        /> */}
+        />
+
         <button className="absolute top-2 right-2 rounded-full bg-white p-2 shadow-md">
           <Heart className="size-3" />
         </button>
@@ -30,10 +32,10 @@ export function ProductCard() {
 
       <CardContent className="p-3 pt-2">
         <CardTitle className="w-full truncate pt-2 font-medium md:text-base">
-          Product Name
+          {product.name}
         </CardTitle>
         <CardDescription className="w-full truncate pt-2 text-xs text-gray-500/70 max-sm:hidden">
-          Product Description
+          {product.description}
         </CardDescription>
 
         <div className="flex items-center gap-2 pt-1">
@@ -55,7 +57,7 @@ export function ProductCard() {
       </CardContent>
 
       <CardFooter className="flex w-full items-center justify-between p-3">
-        <p>$10</p>
+        <p>{product.price}</p>
         <Button variant="outline" className="rounded-full text-gray-500">
           Buy Now
         </Button>
