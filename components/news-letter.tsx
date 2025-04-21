@@ -1,4 +1,4 @@
-export default function NewsLetter() {
+export function NewsLetter() {
   return (
     <div className="flex flex-col items-center justify-center space-y-2 pt-8 pb-14 text-center">
       <h1 className="text-2xl font-medium md:text-4xl">

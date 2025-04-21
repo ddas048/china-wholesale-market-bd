@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer>
       <div className="flex flex-col items-start justify-center gap-10 border-b border-gray-500/30 px-6 py-14 text-gray-500 md:flex-row md:px-16 lg:px-32">

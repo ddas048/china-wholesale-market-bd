@@ -22,7 +22,7 @@ const products = [
   },
 ];
 
-export default function FeaturedProduct() {
+export function FeaturedProduct() {
   return (
     <div className="mt-14">
       <div className="flex flex-col items-center">

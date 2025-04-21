@@ -1,7 +1,7 @@
 import { products } from "@/lib/productData";
 import { ProductCard } from "../product-card";
 
-export default function HomeProduct() {
+export function HomeProduct() {
   return (
     <div className="flex flex-col items-center pt-14">
       <p className="w-full text-left text-2xl font-medium">Popular products</p>

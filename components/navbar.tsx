@@ -2,7 +2,7 @@ import { Search, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export function Navbar() {
   return (
     <nav className="flex items-center justify-between border-b border-gray-300 px-6 py-3 text-gray-700 md:px-16 lg:px-32">
       {/* <Image

@@ -1,7 +1,7 @@
 import { assets } from "@/lib/assets";
 import Image from "next/image";
 
-export default function Banner() {
+export function Banner() {
   return (
     <div className="my-16 flex flex-col items-center justify-between overflow-hidden rounded-xl bg-[#E6E9F2] py-14 md:flex-row md:py-0 md:pl-20">
       <Image
