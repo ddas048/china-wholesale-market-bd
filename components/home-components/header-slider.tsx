@@ -14,7 +14,7 @@ import {
 import Image from "next/image";
 import { assets } from "@/lib/assets";
 
-export function HeaderSlider() {
+export default function HeaderSlider() {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
