@@ -78,11 +78,11 @@ export function HeaderSlider() {
                   </h1>
 
                   <div className="mt-4 flex items-center md:mt-6">
-                    <button className="rounded-full bg-orange-600 px-7 py-2 font-medium text-white md:px-10 md:py-2.5">
+                    <button className="cursor-pointer rounded-full bg-orange-600 px-7 py-2 font-medium text-white md:px-10 md:py-2.5">
                       {slide.buttonText1}
                     </button>
 
-                    <button className="group flex items-center gap-2 px-6 py-2.5 font-medium">
+                    <button className="group flex cursor-pointer items-center gap-2 px-6 py-2.5 font-medium">
                       {slide.buttonText2}
                       <Image
                         className="transition group-hover:translate-x-1"
@@ -105,8 +105,8 @@ export function HeaderSlider() {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="absolute top-1/2 left-2 -translate-y-1/2" />
-        <CarouselNext className="absolute top-1/2 right-2 -translate-y-1/2" />
+        <CarouselPrevious className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer" />
+        <CarouselNext className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer" />
       </Carousel>
     </div>
   );
