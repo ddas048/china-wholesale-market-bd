@@ -8,6 +8,9 @@ export const products = [
     rating: 4.5,
     price: "$299.99",
     imgSrc: assets.apple_earphone_image,
+    image: [assets.apple_earphone_image, assets.bose_headphone_image],
+    offerPrice: "$199.99",
+    category: "earphones",
   },
   {
     id: 2,

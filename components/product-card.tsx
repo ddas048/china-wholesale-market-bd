@@ -34,12 +34,14 @@ export function ProductCard({ product }: { product: any }) {
         <CardTitle className="w-full truncate pt-2 font-medium md:text-base">
           {product.name}
         </CardTitle>
+        
         <CardDescription className="w-full truncate pt-2 text-xs text-gray-500/70 max-sm:hidden">
           {product.description}
         </CardDescription>
 
         <div className="flex items-center gap-2 pt-1">
           <p className="text-xs">{4.5}</p>
+          
           <div className="flex items-center gap-0.5">
             {Array.from({ length: 5 }).map((_, index) => (
               <Star
