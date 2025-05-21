@@ -67,7 +67,7 @@ export function HeaderSlider() {
         <CarouselContent>
           {sliderData.map((slide) => (
             <CarouselItem key={slide.id} className="min-w-full">
-              <div className="mt-6 flex flex-col-reverse items-center justify-between rounded-xl bg-[#E6E9F2] px-5 py-8 md:flex-row md:px-14">
+              <div className="mt-6 flex h-full flex-col-reverse items-center justify-between rounded-xl bg-[#E6E9F2] px-5 py-8 md:flex-row md:px-14">
                 <div className="mt-10 md:mt-0 md:pl-8">
                   <p className="pb-1 text-orange-600 md:text-base">
                     {slide.offer}
