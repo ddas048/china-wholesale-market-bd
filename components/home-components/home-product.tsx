@@ -12,7 +12,7 @@ export function HomeProduct() {
         ))}
       </div>
 
-      <button className="rounded border px-12 py-2.5 text-gray-500/70 transition hover:bg-slate-50/90">
+      <button className="cursor-pointer rounded border px-12 py-2.5 text-gray-500/70 transition hover:bg-slate-50/90">
         See more
       </button>
     </div>

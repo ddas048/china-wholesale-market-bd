@@ -58,7 +58,11 @@ export function ProductCard({ product }: { product: any }) {
 
       <CardFooter className="flex w-full items-center justify-between p-3">
         <p>{product.price}</p>
-        <Button variant="outline" className="rounded-full text-gray-500">
+
+        <Button
+          variant="outline"
+          className="cursor-pointer rounded-full text-gray-500"
+        >
           Buy Now
         </Button>
       </CardFooter>

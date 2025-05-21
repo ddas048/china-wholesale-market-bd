@@ -17,7 +17,7 @@ export function Banner() {
         <p className="max-w-[343px] font-medium text-gray-800/60">
           From immersive sound to precise controls—everything you need to win
         </p>
-        <button className="group flex items-center justify-center gap-1 rounded bg-orange-600 px-12 py-2.5 text-white">
+        <button className="group flex cursor-pointer items-center justify-center gap-1 rounded bg-orange-600 px-12 py-2.5 text-white">
           Buy now
           <Image
             className="transition group-hover:translate-x-1"

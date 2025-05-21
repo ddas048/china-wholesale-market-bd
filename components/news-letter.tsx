@@ -14,7 +14,7 @@ export function NewsLetter() {
           type="text"
           placeholder="Enter your email id"
         />
-        <button className="h-full rounded-md rounded-l-none bg-orange-600 px-8 text-white md:px-12">
+        <button className="h-full cursor-pointer rounded-md rounded-l-none bg-orange-600 px-8 text-white md:px-12">
           Subscribe
         </button>
       </div>
